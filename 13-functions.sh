@@ -22,17 +22,12 @@ then
 else
     echo "Git is already install"
 fi
-# if [ $? -ne 0 ]
-# then    
-#     echo "Git not available, so installing it"
-#     apt install git -y
-#     if [ $? -ne 0 ]
-#     then    
-#         echo "git stallation failed:"
-#         exit 1
-#     else
-#         echo "Git installation success"
-#     fi
-# else
-#     echo "Git already installled"
-# fi
+apt list --installed | grep -i mysql-server
+if [ $? -ne 0 ]
+then   
+    echo " Installing mysql"
+    apt install mysql-server -y
+    validate $? "installing mysql"
+else
+    echo "mysql already installed"
+fi
