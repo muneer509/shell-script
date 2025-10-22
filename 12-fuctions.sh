@@ -1,6 +1,6 @@
 #!/bin/bash
 
- -e \033[47m
+
 
 USERID=$(id -u)
 
