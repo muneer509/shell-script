@@ -17,4 +17,6 @@ dnf list installed git
 
  
 installation_validation $? "Git"
+dnf list installed nginx
+installation_validation $? "Nginx"
 
