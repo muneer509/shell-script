@@ -1,3 +1,3 @@
 #!/bin/bash
-command={date}
-echo "Today date is:$date"
+command=$(date)
+echo "Today date is:$command"
