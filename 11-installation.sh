@@ -1,3 +1,3 @@
 #!/bin/bash
-ROOT=$(id-u)
+ROOT=$(id -u)
 echo "ID is:$ROOT"
