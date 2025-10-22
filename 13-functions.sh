@@ -35,7 +35,7 @@ apt list --installed | grep -i nginx
 if  $? -ne 0 ]
 then
     echo "Installing nginx"
-    apt install nginx -y
+    apt-get install nginx -y
     validate $? "installing nginx"
 else
     echo " nginx already installed"
