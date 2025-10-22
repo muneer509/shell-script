@@ -1,5 +1,7 @@
 #!/bin/bash
 
+\033[47m
+
 USERID=$(id -u)
 
 CHECK_ROOT(){
