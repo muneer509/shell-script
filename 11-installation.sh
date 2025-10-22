@@ -37,7 +37,7 @@ else
     echo "mysql already installed"
 fi
 dnf list installed nginx
-if[ $? -ne 0 ]
+if [ $? -ne 0 ]
 then    
     echo "Nginx is not installed:"
     dnf install nginx -y
