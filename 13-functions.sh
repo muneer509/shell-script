@@ -11,7 +11,7 @@ validate(){
         exit 1
     else
         echo "$2 is success"
-    
+    fi
 }
 apt list --installed | grep -i git
 if [ $? -ne 0 ]
