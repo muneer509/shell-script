@@ -15,7 +15,7 @@
 
 # # echo "First fruit is: ${FRUITS[@]}"
 #!/bin/bash
-family=("Father","Mother","Brother","Sister")
+family=("Father" "Mother" "Brother" "Sister")
 echo "${family[0]}"
 echo "${family[1]}"
 echo "${family[2]}"
