@@ -10,6 +10,7 @@ validate(){
         echo "$2 is failed"
     else
         echo "$2 is sucess"
+    fi
 }
 for i in $@ # all args passed to script
 do
