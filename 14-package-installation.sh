@@ -1,5 +1,5 @@
 #!/bin/bash
-id=${id -u}
+id=$(id -u)
 if [ $id -ne 0 ]
 then
     echo "Please try with Root"
