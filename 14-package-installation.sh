@@ -4,7 +4,7 @@ if [ $id -ne 0 ]
 then
     echo "Please try with Root"
 fi
-validate() {
+validate(){
     if [ $1 -ne 0 ]
     then    
         echo "$2 is failed"
