@@ -32,4 +32,5 @@ do
         validate $? "installing $package"
     else
         echo "$package is already available" &>>$LOG_FILE
+    fi
 done
