@@ -12,7 +12,16 @@ validate(){
         echo "$2 is sucess"
     fi
 }
-for i in $@ # all args passed to script
+for package_name in $@ # all args passed to script
 do
-    echo $i
+    dnf list installed $package_name
+    if [ $? -ne 0 ]
+    then
+        echo "As verified, $package_name is not available, So installing it."
+        dnf install $package_name -y
+        validate $? "Installing $package_name"
+
+    else
+        echo "$package_name is already installed"
+    fi
 done
