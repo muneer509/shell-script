@@ -6,3 +6,4 @@ echo "Arg1 is: $1"
 
 echo number args passed to the script is: $@
 echo "$#"
+echo "PID of script: $$"
