@@ -1,5 +1,12 @@
-echo "enter user ID to login"
-read  userid
-echo "enter the password:"
-read pwd 
-echo "User ID is $userid and password is: $pwd"
+#!/bin/bash
+
+echo "Please enter your username::"
+
+read -s USERNAME #takes input into USERNAME variable
+
+echo "Username entered is: $USERNAME"
+
+echo "Please enter your password::"
+
+read -s PASSWORD
+echo "Password entered is: $PASSWORD"
