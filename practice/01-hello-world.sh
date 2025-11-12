@@ -1,4 +1,4 @@
 #!/bin/bash
-echo "$message"
 
 message="Hello!Muneer"
+echo "$message"
