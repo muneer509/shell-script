@@ -5,3 +5,4 @@ echo "script name: $0"
 echo "Arg1 is: $1"
 
 echo number args passed to the script is: $@
+echo "$#"
